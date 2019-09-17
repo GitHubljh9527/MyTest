@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hr.mapper.ISalarystandardMapper">
+	<resultMap id="BaseResultMap"
+		type="com.hr.entity.Salarystandard">
+		<id column="standardId" property="standardid" jdbcType="INTEGER" />
+		<result column="standardName" property="standardname"
+			jdbcType="VARCHAR" />
+		<result column="designer" property="designer"
+			jdbcType="INTEGER" />
+		<result column="register" property="register"
+			jdbcType="VARCHAR" />
+		<result column="checker" property="checker" jdbcType="VARCHAR" />
+		<result column="changer" property="changer" jdbcType="VARCHAR" />
+		<result column="registTime" property="registtime"
+			jdbcType="DATE" />
+		<result column="checkTime" property="checktime" jdbcType="DATE" />
+		<result column="changeTime" property="changetime"
+			jdbcType="DATE" />
+		<result column="salarySum" property="salarysum"
+			jdbcType="DOUBLE" />
+		<result column="checkStatus" property="checkstatus"
+			jdbcType="INTEGER" />
+		<result column="changeStatus" property="changestatus"
+			jdbcType="INTEGER" />
+		<result column="checkComment" property="checkcomment"
+			jdbcType="VARCHAR" />
+		<result column="remark" property="remark" jdbcType="VARCHAR" />
+	</resultMap>
+</mapper>
